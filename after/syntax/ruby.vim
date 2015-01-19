@@ -2,6 +2,8 @@ syntax keyword rubyTestMethod
       \ assert
       \ assert_block
       \ assert_empty
+      \ assert_enqueued_jobs
+      \ assert_enqueued_with
       \ assert_equal
       \ assert_in_delta
       \ assert_in_epsilon
@@ -10,7 +12,11 @@ syntax keyword rubyTestMethod
       \ assert_kind_of
       \ assert_match
       \ assert_nil
+      \ assert_no_enqueued_jobs
+      \ assert_no_performed_jobs
       \ assert_operator
+      \ assert_performed_jobs
+      \ assert_performed_with
       \ assert_predicate
       \ assert_raises
       \ assert_respond_to
@@ -28,10 +34,14 @@ syntax keyword rubyTestMethod
       \ must_be_silent
       \ must_be_within_delta
       \ must_be_within_epsilon
+      \ must_enqueue_jobs
+      \ must_enqueue_with
       \ must_equal
       \ must_include
       \ must_match
       \ must_output
+      \ must_perform_jobs
+      \ must_perform_with
       \ must_raise
       \ must_respond_to
       \ must_send
@@ -61,9 +71,11 @@ syntax keyword rubyTestMethod
       \ wont_be_same_as
       \ wont_be_within_delta
       \ wont_be_within_epsilon
+      \ wont_enqueue_jobs
       \ wont_equal
       \ wont_include
       \ wont_match
+      \ wont_perform_jobs
       \ wont_respond_to
 
 syntax keyword rubyTestStatement
